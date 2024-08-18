@@ -34,3 +34,4 @@ Dla najlepszej próby parametr optionalTreshold wynosił :
 Wszystkie wyniki dla najlepszej próby wydają się być prawidłowe.
 
 Możliwe dalsze ulepszenia skryptu:
+- znalezienie lepszej bazy alkoholi
