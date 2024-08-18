@@ -4,6 +4,7 @@ import json
 
 base_url = 'https://www.thewhiskyexchange.com/brands/spirits'
 
+# alcohol categories
 categories = {
     'cognac': '/351/cognac',
     'armagnac': '/355/armagnac',
@@ -47,7 +48,11 @@ for category, endpoint in categories.items():
         print(f'found {len(alcohols)} alcohol brands')
     else:
         print('no alcohol brand found')
-    
+
+
 if len(alcohols_list) > 0:
     with open('alcohols.json', 'w') as file:
         file.dump(alcohols_list, file, indent=4)
+
+# robots.txt says it's possible to get data from /brands endpoint
+# but got 403 endpoint
